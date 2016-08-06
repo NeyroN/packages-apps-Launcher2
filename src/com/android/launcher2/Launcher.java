@@ -1569,6 +1569,7 @@ public final class Launcher extends Activity
 
         // Save the current AppsCustomize tab
         if (mAppsCustomizeTabHost != null) {
+            mAppsCustomizeContent.syncCurrentPageFromTab();
             String currentTabTag = mAppsCustomizeTabHost.getCurrentTabTag();
             if (currentTabTag != null) {
                 outState.putString("apps_customize_currentTab", currentTabTag);

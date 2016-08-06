@@ -283,6 +283,10 @@ public class WallpaperChooserDialogFragment extends DialogFragment implements
                         "Out of memory trying to load wallpaper res=%08x", params[0]),
                         e);
                 return null;
+            } catch (Exception ex) {
+                Log.w(TAG, String.format(
+                        "Exception to load wallpaper res=%08x", params[0]), ex);
+                return null;
             }
         }
 

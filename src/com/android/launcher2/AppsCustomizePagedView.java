@@ -987,6 +987,10 @@ public class AppsCustomizePagedView extends PagedViewWithDraggableItems implemen
         }
     }
 
+    public void syncCurrentPageFromTab() {
+        updateCurrentTab(getCurrentPage());
+    }
+
     /*
      * Apps PagedView implementation
      */
